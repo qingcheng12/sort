@@ -83,6 +83,7 @@ int main()
 	auto f = [] { return 42; };
 	cout << "f() = " << f() << endl;
 
+	cout << endl;
 	auto iter = vi.begin();
 	while(iter != vi.end())
 	{
@@ -102,15 +103,18 @@ int main()
     cout << endl;
 
 
-//	for (auto i : vi)
-//		cout << vi[i] << " " ;
-//	cout << endl;
-	cout << "Please input the length of list: \n" ;
-	string str;
+    cout << endl;
+	string str = "we,are,Chinese";
 
+	// 在一个逗号分隔的列表中查找第一个元素
+	auto coma  = find(str.cbegin(), str.cend(),',');
+	cout << string(str.cbegin(), coma) << endl;
 
-	cout << cin.eof() << endl;
-	cout << "Please input the length of list: \n" ;
+	// 在一个逗号分隔的列表中查找最后一个元素
+	auto rcomma = find(str.crbegin(), str.crend(), ',');
+	// 得到一个正向迭代器， 从逗号开始读取字符直到str末尾
+	cout << string(rcomma.base(), str.cend()) << endl;
+
 
 	return 0;
 }
