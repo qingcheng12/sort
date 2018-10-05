@@ -83,8 +83,6 @@ int main()
 	auto f = [] { return 42; };
 	cout << "f() = " << f() << endl;
 
-
-
 	auto iter = vi.begin();
 	while(iter != vi.end())
 	{
