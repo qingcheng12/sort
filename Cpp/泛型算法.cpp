@@ -114,7 +114,7 @@ int main()
 	auto rcomma = find(str.crbegin(), str.crend(), ',');
 	// 得到一个正向迭代器， 从逗号开始读取字符直到str末尾
 	cout << string(rcomma.base(), str.cend()) << endl;
-
+ 
 
 	return 0;
 }
