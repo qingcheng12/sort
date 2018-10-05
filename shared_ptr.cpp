@@ -101,5 +101,6 @@ int main()
 	auto p = make_shared<int>(42); // p指向的对象只有p一个引用者
 	auto q(p);   // p和q指向相同的对象， 此对象有2个引用者
 
+	
 	return 0;
 }
