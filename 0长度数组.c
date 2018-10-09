@@ -18,7 +18,8 @@ struct max_buffer
 {
     int     len;
     char    data[MAX_LENGTH];
-}__attribute((packed));
+}__attribute((packed));  // 让编译器取消结构在编译过程中的优化对齐,按照实际占用字节数进行对齐，\
+                         // 这样子两边都需要使用 __attribute__ ((packed))取消优化对齐，就不会出现对齐的错位现象。
 
 
 //  指针数组
