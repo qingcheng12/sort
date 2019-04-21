@@ -6,14 +6,11 @@
 // Description : Hello World in C++, Ansi-style
 //============================================================================
 
-/**
- * 在C++中，mutable也是为了突破const的限制而设置的。
- * 被mutable修饰的变量，将永远处于可变的状态，即使在一个const函数中。
- * 
- * /
-
 #include <iostream>
 using namespace std;
+
+// 在C++中，mutable也是为了突破const的限制而设置的。
+// 被mutable修饰的变量，将永远处于可变的状态，即使在一个const函数中。
 
 class ClxTest
 {
@@ -63,9 +60,6 @@ int main() {
 
 	ClxTest lx;
 	OutputTest(lx);
-
-
-
 
 	return 0;
 }
