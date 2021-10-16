@@ -73,7 +73,7 @@ public:
 
 	
 
-class Solution {
+class Solution1614 {
 public:
     int maxDepth(string s) 
 	{
